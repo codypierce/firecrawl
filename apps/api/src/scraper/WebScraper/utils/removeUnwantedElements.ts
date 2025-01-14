@@ -29,7 +29,8 @@ export const removeUnwantedElements = (
     }
   }
 
-  soup("script, style, iframe, noscript, meta, head").remove();
+  // soup("script, style, iframe, noscript, meta, head").remove();
+  soup("style, noscript").remove();
 
   if (
     pageOptions.removeTags &&
